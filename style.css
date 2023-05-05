@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*navbar styling*/
+navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 80px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #828584;
+    position: fixed;
+}
+ navbar .logo{
+     color: white;
+     font-size: 25px;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: 700;
+     letter-spacing: 2px;
+ }
+ navbar .logo span{
+color: rgb(78, 199, 199);
+ }
+
+navbar ul{
+    position: relative;
+    display: flex;
+}
+navbar ul li{
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+navbar ul li a{
+position: relative;
+display: inline-block;
+margin: 0 15px;
+color: white;
+text-decoration: none;
+}
+navbar.sticky{
+    padding: 25px 80px;
+    background:rgb(57, 167, 167); ;
+}
+navbar.sticky .logo span{
+    color: black;
+}
+navbar.sticky .logo{
+    color: rgb(255, 255, 255);
+}
+
+/*menu btn styling*/
+.menu-btn{
+    color: white;
+    padding-left: 200px;
+    padding-top: 5px;
+    font-size: 23px;
+    cursor: pointer;
+    display:none ;
+}
+
+/*Home Section*/
+.home{
+    display: flex;
+    background: #000000;
+    height: 90vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+    margin-top: 200px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-1 span{
+    color: rgb(78, 199, 199);
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+   
+    
+}
+.home .home-content .text-3 span{
+    color: rgb(78, 199, 199);
+    font-weight: 500;
+}
+.img-fluid{
+    height: auto;
+    width: 350px;
+    padding-left: 70px;
+}
+/*About*/
+.about{
+    margin-top: 70px;
+
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+.heading h2{
+    font-weight: 800;
+}
+.content{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.contentbox{
+    padding-right: 40px;
+}
+.contentbox h3{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+.w3{
+    min-width: 50%;
+}
+img1{
+    width: 500px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.Services{
+background: #111;
+}
+.heading.white{
+    color: #fff;
+    padding-top: 50px;
+}
+.Services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.Services .content .servicebx {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.Services .content .servicebx:hover{
+    background: #2196f3;
+}
+.Services .content .servicebx img{
+    max-width: 80px;
+    filter: invert(1);
+}
+.Services .content .servicebx h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.skills .text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px ;
+}
+.skills p{
+    margin-right: 40px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.skills .skills-content .right span{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    margin-bottom: 60px;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .right .html::before{
+    width: 80%;
+}
+.skills .skills-content .right .css::before{
+    width: 75%;
+}
+.skills .skills-content .right .javascript::before{
+    width: 40%;
+}
+.skills .skills-content .right .bootstrap::before{
+    width: 50%;
+}
+.contact{
+    background: rgb(7, 5, 6);
+    padding: 50px 50px;
+    color: white;
+}
+.contact .text{
+    text-align: center;
+    padding-bottom:30px ;
+    font-weight: 600;
+    text-decoration: unset;
+    
+}
+.contact .col .form-control{
+    margin-bottom: 10px;
+}
+.contact .continfo{
+    padding-left: 70px;
+}
